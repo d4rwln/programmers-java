@@ -11,15 +11,15 @@ public class Worker {
 	private WorkerLevel level;
 	private double baseSalary;
 	
-	private Departament departament;
+	private Department department;
 	private List<HourContract> contracts = new ArrayList<>();
 	
 	
-	public Worker(String name, WorkerLevel level, double baseSalary, Departament departament) {
+	public Worker(String name, WorkerLevel level, double baseSalary, Department department) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
-		this.departament = departament;
+		this.department = department;
 	}
 	
 	public String getName() {
@@ -46,12 +46,12 @@ public class Worker {
 		this.baseSalary = baseSalary;
 	}
 
-	public Departament getDepartament() {
-		return departament;
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void setDepartament(Departament departament) {
-		this.departament = departament;
+	public void setDepartament(Department department) {
+		this.department = department;
 	}
 
 	public List<HourContract> getContracts() {
